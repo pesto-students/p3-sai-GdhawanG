@@ -17,7 +17,7 @@ if your image is in your repository, you can give url relative to your repositor
 2. A Request is sent to the server of the website
 3. The response of the server is parsed
 4. The page is rendered and displayed
-   ![Browser BTS](https://lucid.app/lucidchart/b4fd396e-d864-48ab-9180-7ac481359afe/edit?invitationId=inv_677c2b4f-8471-402c-954f-02e3c9981c00#)
+   ![Browser BTS](./Browser_BTS.PNG "Browser BTS")
 
 - What are the high level components of a browser?
   The browser's main components are:
