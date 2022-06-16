@@ -17,7 +17,7 @@ if your image is in your repository, you can give url relative to your repositor
 2. A Request is sent to the server of the website
 3. The response of the server is parsed
 4. The page is rendered and displayed
-   ![Browser BTS](./Browser_BTS.PNG "Browser BTS")
+   ![Browser BTS](../media/Browser_BTS.PNG "Browser BTS")
 
 - What are the high level components of a browser?
   The browser's main components are:
@@ -46,7 +46,7 @@ Every HTML tag has some semantic meaning which the browser understands, because 
 - The order of execution of scripts?
   When browsers send requests to servers for HTML files, those HTML files often contain \<link> elements referencing external CSS stylesheets and \<script> elements referencing external JavaScript scripts. Its important to know the order in which those files are parsed by the browser since the browser loads the page:
 
-The browser parses the HTML file first, and that leads to the browser recognizing any \<link>-element references to external CSS stylesheets and any \<script>-element references to scripts.
+The browser parses the HTML file first, and that leads to the browser recognizing any \<link>-element references to external CSS stylesheets and any \<script> element references to scripts.
 As the browser parses the HTML, it sends requests back to the server for any CSS files it has found from \<link> elements, and any JavaScript files it has found from \<script> elements, and from those, then parses the CSS and JavaScript.
 The browser generates an in-memory DOM tree from the parsed HTML, generates an in-memory CSSOM structure from the parsed CSS, and compiles and executes the parsed JavaScript.
 As the browser builds the DOM tree and applies the styles from the CSSOM tree and executes the JavaScript, a visual representation of the page is painted to the screen, and the user sees the page content and can begin to interact with it.
