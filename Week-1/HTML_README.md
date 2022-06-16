@@ -31,7 +31,7 @@ if your image is in your repository, you can give url relative to your repositor
 7. Data storage. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
    https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png
 
-- How each component works with each other. (For example: Networking component isthe one which makes HTTP calls, Data storage component is a browser’s persistencelayer which saves data locally such as Cookies and Local Storage.
+- How each component works with each other. (For example: Networking component is the one which makes HTTP calls, Data storage component is a browser’s persistencelayer which saves data locally such as Cookies and Local Storage.
   https://i.imgur.com/VcpjfPL.png
   https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#1_1
 
@@ -41,14 +41,13 @@ if your image is in your repository, you can give url relative to your repositor
   The browser checks the data and metadata that's enclosed in the response. And based on that, it decides what to do.
   You might've had cases where a PDF opened in your browser. That happened because the response informed the browser that the data is not a website but a PDF document instead. And the browser tries to pick the best handling mechanism for any data type it detects.
 
-Every HTML tag has some semantic meaning which the browser understands, because HTML is also standardized. Hence there is no guessing about what a <h1> tag means.
-The browser knows how to parse HTML and now simply goes through the entire response data (also called "the response body") to render the website.
+Every HTML tag has some semantic meaning which the browser understands, because HTML is also standardized. Hence there is no guessing about what a \<h1> tag means. The browser knows how to parse HTML and now simply goes through the entire response data (also called "the response body") to render the website.
 
 - The order of execution of scripts?
-  When browsers send requests to servers for HTML files, those HTML files often contain <link> elements referencing external CSS stylesheets and <script> elements referencing external JavaScript scripts. It's important to know the order in which those files are parsed by the browser as the browser loads the page:
+  When browsers send requests to servers for HTML files, those HTML files often contain \<link> elements referencing external CSS stylesheets and \<script> elements referencing external JavaScript scripts. Its important to know the order in which those files are parsed by the browser since the browser loads the page:
 
-The browser parses the HTML file first, and that leads to the browser recognizing any <link>-element references to external CSS stylesheets and any <script>-element references to scripts.
-As the browser parses the HTML, it sends requests back to the server for any CSS files it has found from <link> elements, and any JavaScript files it has found from <script> elements, and from those, then parses the CSS and JavaScript.
+The browser parses the HTML file first, and that leads to the browser recognizing any \<link>-element references to external CSS stylesheets and any \<script>-element references to scripts.
+As the browser parses the HTML, it sends requests back to the server for any CSS files it has found from \<link> elements, and any JavaScript files it has found from \<script> elements, and from those, then parses the CSS and JavaScript.
 The browser generates an in-memory DOM tree from the parsed HTML, generates an in-memory CSSOM structure from the parsed CSS, and compiles and executes the parsed JavaScript.
 As the browser builds the DOM tree and applies the styles from the CSSOM tree and executes the JavaScript, a visual representation of the page is painted to the screen, and the user sees the page content and can begin to interact with it.
 
