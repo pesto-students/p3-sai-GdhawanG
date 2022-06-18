@@ -1,14 +1,8 @@
-# Pesto Assignments
+# HTML Assignments
 
 Week 1 assignment.
 
 # Exercise 1.1:
-
-<!-- The below syntax contains ![]() with alt text wrapped in square brackets[] and url and title is inside brackets().
-![Alt text](url "Title")
-if your image is in your repository, you can give url relative to your repository. If the image is located in repository->assets->employee.png url, Then the url is included as seen below
-
-![Employee data](/repository/assets/employee.png?raw=true "Employee Data title") -->
 
 - How a browser works?
   As soon you enter a URL in your browser and you hit ENTER, following major things happen:
@@ -17,7 +11,7 @@ if your image is in your repository, you can give url relative to your repositor
 2. A Request is sent to the server of the website
 3. The response of the server is parsed
 4. The page is rendered and displayed
-   ![Browser BTS](../media/Browser_BTS.PNG "Browser BTS")
+   ![Browser BTS](../media/browserBTS.PNG "Browser BTS")
 
 - What are the high level components of a browser?
   The browser's main components are:
