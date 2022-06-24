@@ -1,21 +1,27 @@
 # Pesto Assignments
 
-Welcome to Pesto assignments.
+Week 1 assignment.
 
+# Product Mindset Session Learnings
 
-## How to solve assignments
+Summarising the Learnings from the Sunday Mastersession on "Product Mindset" by Arindam Paul.
 
-Weekly Assignments will be shared by your mentor or instructor.
-
-Make sure master or main branch is protected and you are not able to push any code directly to master.
-
-- Clone this repo to your local.
-- Checkout to new branch for submission. Suggestion you can name new branch week wise - branch for week 1 assignment can be week1
-```bash
-git checkout -b week1
-```
-- Create Assignment week folder in root directory(if it doesn't exist) for eg. for solving week 1 assignment create folder with name "week1".
-- You can create subfolders in main week(week1) folder if required.
-- Add proper readme [(How to Write proper readme](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) )in week's folder or subfolder explaining about assignment, how to run assignment and any other instructions. 
-- Raise a PR against master and add your mentor as reviewer
-- Resolve PR comments if any and once your mentor approves your PR, Merge it.
+- Always have a customer centric & win-win approach for your business. That's only how you can sustain.
+- Understanding user's life-cycle is very important in developing any application & reteaining the customers too.
+- Strive hard to make & maintain trustworhty long-term relationships with your Customers.
+- Pay utmost attention to details & ask plethora of questions in the Requirement Gathering phase itself.
+- At no point in time, the organisation should forget the common collective goal it decided to serve.
+- Be as attentive in all meetings that you can share MOMs.
+- Break down the problem in very small chunks, think over them and then only start working.
+- It's better to have good collaborations amongst the teams, so that one's knowledge can help others.
+- Try to be in customer shoes whenever solving a problem.
+- Be shameless yet responsbile in sharing your views irrespective of whatever official designation you are on.
+- Keep trying to explain your view point if you really think it's gonna make a difference.
+- Work & act as if you are already one designation above to really standout & shine.
+- Work at a place where you can constantly learn, contribute & grow.
+- Being a leader is a mindset and not a job role.
+- Take up charge and Always show up, how small or boring the task may sound & set an example for others.
+- Never shy away from teaching/ mentoring your juniors or even learning from them.
+- Delegate the tasks which are Urgent & Not Important, to reduce your workload and train the juniors at the same time.
+- Declutter the work which is neither important nor urgent and/or isn't aligned with your organisation's goal.
+- Conflicts can also be healthy & prodcutive, considering everyone is working to acheive the same goal.
