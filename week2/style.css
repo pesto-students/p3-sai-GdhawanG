@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  background-color: brown;
+  grid-template-areas:
+    "headContent headContent headContent headContent"
+    "leftPaneContent leftPaneContent  rightPaneContent rightPaneContent";
+}
+
+.head {
+  grid-area: headContent;
+  background-color: red;
+}
+
+.leftPane {
+  grid-area: leftPaneContent;
+  background-color: yellow;
+}
+
+.rightPane {
+  grid-area: rightPaneContent;
+  background-color: green;
+}
