@@ -1,0 +1,110 @@
+.main {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  /* top: 0;
+  left: 0; */
+  /* background-color: black; */
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#boxOne {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+#boxTwo {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+#boxThree {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+#boxFour {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+#boxOne:hover {
+  animation: rotateBoxOne 1s;
+}
+
+#boxTwo:hover {
+  animation: rotateBoxTwo 1s;
+}
+
+/* #boxThree:hover {
+  animation: rotateBoxThree 1s;
+} */
+
+/* #boxFour:hover {
+  animation: rotateBoxFour 1s;
+} */
+
+/* @keyframes rotateBoxOne {
+  to {
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+}
+
+@keyframes rotateBoxTwo {
+  to {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+  }
+}
+
+@keyframes rotateBoxThree {
+  to {
+    transform: rotate(-90deg);
+    transform-origin: top right;
+  }
+}
+
+@keyframes rotateBoxFour {
+  to {
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+  }
+} */
+
+@keyframes rotateBoxThree {
+  to {
+    transform: rotate(-90deg);
+    transform-origin: 0 200px;
+  }
+}
+
+@keyframes rotateBoxFour {
+  to {
+    transform: rotate(90deg);
+    transform-origin: 200px 200px;
+  }
+}
+
+.main:hover {
+  animation: rotateBoxFour rotateBoxThree 1s;
+}
+
+@keyframes rotateMainDiv {
+  25% {
+    transform: rotate(-90deg);
+    /* transform-origin: top right; */
+    transition-property: boxOne;
+  }
+}
