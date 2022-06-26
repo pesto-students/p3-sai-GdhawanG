@@ -19,27 +19,39 @@ h1 {
   height: 100px;
   width: 100px;
   background-color: red;
+  transition: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
 }
 
 #boxTwo {
   height: 100px;
   width: 100px;
   background-color: blue;
+  transition: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
 }
 
 #boxThree {
   height: 100px;
   width: 100px;
   background-color: yellow;
+  transition: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
 }
 
 #boxFour {
   height: 100px;
   width: 100px;
   background-color: green;
+  transition: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
 }
 
-#boxOne:hover {
+/* #boxOne:hover {
   animation: rotateBoxOne 1s;
 }
 
@@ -47,11 +59,10 @@ h1 {
   animation: rotateBoxTwo 1s;
 }
 
-/* #boxThree:hover {
+#boxThree:hover {
   animation: rotateBoxThree 1s;
-} */
-
-/* #boxFour:hover {
+}
+#boxFour:hover {
   animation: rotateBoxFour 1s;
 } */
 
@@ -83,7 +94,7 @@ h1 {
   }
 } */
 
-@keyframes rotateBoxThree {
+/* @keyframes rotateBoxThree {
   to {
     transform: rotate(-90deg);
     transform-origin: 0 200px;
@@ -95,15 +106,31 @@ h1 {
     transform-origin: 200px 200px;
   }
 }
+*/
 
-.main:hover {
-  animation: rotateBoxFour rotateBoxThree 1s;
+.main:hover #boxOne {
+  /* animation: rotateMainDiv 1s; */
+  transform: rotate(90deg);
 }
 
-@keyframes rotateMainDiv {
-  25% {
+.main:hover #boxTwo {
+  /* animation: rotateMainDiv 1s; */
+  transform: rotate(-90deg);
+}
+
+.main:hover #boxThree {
+  /* animation: rotateMainDiv 1s; */
+  transform: rotate(-90deg);
+}
+
+.main:hover #boxFour {
+  /* animation: rotateMainDiv 1s; */
+  transform: rotate(90deg);
+}
+
+/* @keyframes rotateMainDiv {
+  to {
     transform: rotate(-90deg);
-    /* transform-origin: top right; */
-    transition-property: boxOne;
+    transform-origin: top right;
   }
-}
+} */
