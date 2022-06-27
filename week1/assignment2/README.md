@@ -10,9 +10,7 @@ Week 1 assignment.
 
 ## Actual Result
 
-- Taken at a 75% zoom level.
-
-![Actual Result](./assets/images/expectedResult.PNG "Actual Result")
+![Actual Result](./assets/images/actualResult.PNG "Actual Result")
 
 - Features :
   A simple webpage built using HTML, CSS.

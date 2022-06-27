@@ -5,86 +5,99 @@
   margin: 0;
 }
 
+.header {
+  background-color: rgb(64, 61, 61);
+  color: white;
+  overflow: hidden;
+  display: flex;
+}
+
+.header img {
+  padding: 12px;
+}
+
+.right-header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 table {
   border-collapse: collapse;
   width: 100em;
-  margin-bottom: 100px;
+  margin-bottom: 220px;
+  margin-left: 12px;
 }
 
 td,
 th {
   text-align: left;
-  padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: whitesmoke;
 }
 
-.header {
-  grid-area: header;
-  background-color: rgb(47, 46, 46);
-  /* height: 200px; */
-  color: white;
-}
-
-/* .header>div{
-    float: left;
-} */
-
-.header img {
-  inline-size: 150px;
-  padding: 20px;
-}
-
 .sidenav {
-  grid-area: menu;
-  /* background-color: rgb(172, 168, 168); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: whitesmoke;
   color: black;
-  width: fit-content;
 }
 
-.songsLibrary {
-  grid-area: main;
-  /* background-color: greenyellow; */
+.grid-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-button {
-  color: blue;
-  align-self: right;
+.content {
+  display: flex;
+  flex: 1;
+  height: calc(100vh-150px);
 }
 
-.sidenav > i {
-  padding: 30px;
-  margin: 0;
-  width: 30px;
-  /* background-color: yellow; */
-}
 .footer {
-  grid-area: footer;
   background-color: rgb(60, 113, 157);
   color: white;
-  /* height: 150px; */
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer img {
-  inline-size: 100px;
-  padding: 20px;
+.left-footer {
+  display: flex;
+}
+
+.left-footer img {
+  height: 80%;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.left-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  display: flex;
+  height: 100%;
+  padding: 30px;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
 }
 
 .footer-buttons {
-  justify-content: space-evenly;
-  /* text-align: right; */
-}
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "menu header header header"
-    "menu main main main"
-    "footer footer footer footer";
-}
-
-.grid-container > div {
-  font-size: 10px;
+  padding-top: 20px;
 }
