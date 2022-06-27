@@ -23,11 +23,12 @@ Week 1 assignment.
 5. UI backend: used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
 6. JavaScript interpreter. Used to parse and execute JavaScript code.
 7. Data storage. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
-   https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png
 
-- How each component works with each other. (For example: Networking component is the one which makes HTTP calls, Data storage component is a browser’s persistencelayer which saves data locally such as Cookies and Local Storage.
-  https://i.imgur.com/VcpjfPL.png
-  https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#1_1
+   ![Browser Components](./assets/images/browserComponents.png "Browser Components")
+
+- How each component works with each other.
+  Networking component is the one which makes HTTP calls, Data storage component is a browser’s persistencelayer which saves data locally such as Cookies and Local Storage.
+  ![Main Flow](./assets/images/mainFlow.png "Main Flow")
 
 - How Parsing works and its importance?
   The browser receives the response sent by the server. This alone, doesn't display anything on the screen though.
