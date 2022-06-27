@@ -12,5 +12,5 @@ Week 1 assignment.
 
 ![Actual Result](./assets/images/actualResult.PNG "Actual Result")
 
-- Features :
+- Feature :
   A simple webpage built using HTML, CSS.
