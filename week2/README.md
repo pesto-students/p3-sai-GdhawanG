@@ -1,4 +1,8 @@
-##Exercise:
+# Pesto Assignments
+
+# Week 2 assignment.
+
+# Exercise:
 
 - Create a new `.html` page and link a `.css` file to it.
 - Using CSS only, achieve the above animation.
@@ -9,3 +13,7 @@
 2. The UI should closely match with the screengrab given as sample. Layout, forms, validationetc.
 3. 3rd party CSS libraries should not have been used.
 4. There should be one or more Git commits with meaningful commit messages.
+
+# Screen recording :
+
+[box-rotation.pptx](https://github.com/pesto-students/p3-sai-GdhawanG/files/8999331/box-rotation.pptx)
