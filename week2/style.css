@@ -1,26 +1,32 @@
 .main {
   display: flex;
+  position: absolute;
+  padding: 100px;
   height: 200px;
   width: 200px;
-  padding: 10px;
-  /* top: 0;
-  left: 0; */
-  /* background-color: black; */
+  z-index: 2;
+}
+
+.text-box {
+  display: flex;
+  position: absolute;
+  padding: 100px;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
 }
 
 h1 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
+/* Individual box transitions */
 #boxOne {
   height: 100px;
   width: 100px;
   background-color: red;
   transition: transform;
-  transition-duration: 5s;
+  transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -29,7 +35,7 @@ h1 {
   width: 100px;
   background-color: blue;
   transition: transform;
-  transition-duration: 5s;
+  transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -38,7 +44,7 @@ h1 {
   width: 100px;
   background-color: yellow;
   transition: transform;
-  transition-duration: 5s;
+  transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -47,90 +53,49 @@ h1 {
   width: 100px;
   background-color: green;
   transition: transform;
-  transition-duration: 5s;
+  transition-duration: 2s;
   transition-timing-function: ease-in-out;
 }
 
-/* #boxOne:hover {
-  animation: rotateBoxOne 1s;
-}
-
-#boxTwo:hover {
-  animation: rotateBoxTwo 1s;
-}
-
-#boxThree:hover {
-  animation: rotateBoxThree 1s;
-}
-#boxFour:hover {
-  animation: rotateBoxFour 1s;
-} */
-
-/* @keyframes rotateBoxOne {
-  to {
-    transform: rotate(90deg);
-    transform-origin: top left;
-  }
-}
-
-@keyframes rotateBoxTwo {
-  to {
-    transform: rotate(-90deg);
-    transform-origin: bottom left;
-  }
-}
-
-@keyframes rotateBoxThree {
-  to {
-    transform: rotate(-90deg);
-    transform-origin: top right;
-  }
-}
-
-@keyframes rotateBoxFour {
-  to {
-    transform: rotate(90deg);
-    transform-origin: bottom right;
-  }
-} */
-
-/* @keyframes rotateBoxThree {
-  to {
-    transform: rotate(-90deg);
-    transform-origin: 0 200px;
-  }
-}
-@keyframes rotateBoxFour {
-  to {
-    transform: rotate(90deg);
-    transform-origin: 200px 200px;
-  }
-}
-*/
+/* Hover Tranisitions */
 
 .main:hover #boxOne {
-  /* animation: rotateMainDiv 1s; */
   transform: rotate(90deg);
+  transform-origin: top left;
 }
 
 .main:hover #boxTwo {
-  /* animation: rotateMainDiv 1s; */
   transform: rotate(-90deg);
+  transform-origin: bottom left;
 }
 
 .main:hover #boxThree {
-  /* animation: rotateMainDiv 1s; */
   transform: rotate(-90deg);
+  transform-origin: top right;
 }
 
 .main:hover #boxFour {
-  /* animation: rotateMainDiv 1s; */
   transform: rotate(90deg);
+  transform-origin: bottom right;
 }
 
-/* @keyframes rotateMainDiv {
-  to {
-    transform: rotate(-90deg);
-    transform-origin: top right;
-  }
-} */
+/* Non-Hover Tranisitions */
+.main #boxOne {
+  transform: rotate(0deg);
+  transform-origin: top left;
+}
+
+.main #boxTwo {
+  transform: rotate(0deg);
+  transform-origin: bottom left;
+}
+
+.main #boxThree {
+  transform: rotate(0deg);
+  transform-origin: top right;
+}
+
+.main #boxFour {
+  transform: rotate(0deg);
+  transform-origin: bottom right;
+}
