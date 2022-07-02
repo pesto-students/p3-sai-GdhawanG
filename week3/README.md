@@ -10,8 +10,8 @@ Exercise 3.1:
 
 # Expected Result
 
-![Expected Result](./assets/images/expectedResult.PNG "Expected Result")
+![Expected Result](./assets/images/expectedResult.png "Expected Result")
 
 # Actual Result
 
-![Actual Result](./assets/images/actualResult.PNG "Actual Result")
+![Actual Result](./assets/images/actualResult.png "Actual Result")
