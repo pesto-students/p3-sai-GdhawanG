@@ -1,16 +1,17 @@
-function createIncrement() {
-  let count = 0;
-  function increment() {
-    count++;
-  }
-  let message = `Count is ${count}`;
-  function log() {
-    console.log(message);
-  }
-  return [increment, log];
+function createStack() {
+  let items = [];
+  return {
+    push(x) {
+      items.push(x);
+    },
+    pop() {
+      items.pop();
+    },
+  };
 }
-const [increment, log] = createIncrement();
-increment();
-increment();
-increment();
-log(); // What is logged?
+
+const stack = createStack();
+stack.push(10);
+stack.push(5);
+stack.pop();
+console.log(stack.items); // => undefined
