@@ -20,82 +20,70 @@ h1 {
   margin: auto;
 }
 
+.box {
+  height: 100px;
+  width: 100px;
+  transition: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
 /* Individual box transitions */
-#boxOne {
-  height: 100px;
-  width: 100px;
+.one {
   background-color: red;
-  transition: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
 }
 
-#boxTwo {
-  height: 100px;
-  width: 100px;
+.two {
   background-color: blue;
-  transition: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
 }
 
-#boxThree {
-  height: 100px;
-  width: 100px;
+.three {
   background-color: yellow;
-  transition: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
 }
 
-#boxFour {
-  height: 100px;
-  width: 100px;
+.four {
   background-color: green;
-  transition: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
 }
 
 /* Hover Tranisitions */
 
-.main:hover #boxOne {
+.main:hover .one {
   transform: rotate(90deg);
   transform-origin: top left;
 }
 
-.main:hover #boxTwo {
+.main:hover .two {
   transform: rotate(-90deg);
   transform-origin: bottom left;
 }
 
-.main:hover #boxThree {
+.main:hover .three {
   transform: rotate(-90deg);
   transform-origin: top right;
 }
 
-.main:hover #boxFour {
+.main:hover .four {
   transform: rotate(90deg);
   transform-origin: bottom right;
 }
 
 /* Non-Hover Tranisitions */
-.main #boxOne {
+.main .one {
   transform: rotate(0deg);
   transform-origin: top left;
 }
 
-.main #boxTwo {
+.main .two {
   transform: rotate(0deg);
   transform-origin: bottom left;
 }
 
-.main #boxThree {
+.main .three {
   transform: rotate(0deg);
   transform-origin: top right;
 }
 
-.main #boxFour {
+.main .four {
   transform: rotate(0deg);
   transform-origin: bottom right;
 }
