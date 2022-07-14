@@ -16,31 +16,14 @@ let reject = function (err) {
 };
 
 let myPromise = function (executorFunc) {
-  // then = function (val) {
-  //   console.log(`resolved with ${val}`);
-  //   return this;
-  // };
-  // catch = function (err) {
-  //   console.log(`rejected with ${err}`);
-  // };
   if (randomNum % 5 != 0) {
+    console.log(`resolved with ${randomNum}`);
     resolve(randomNum);
   } else {
+    console.log(`rejected with ${randomNum}`);
     reject(randomNum);
   }
 };
 myPromise(executorFunc);
 // myPromise.then();
 // myPromise(executorFunc).then().catch();
-
-// class approach
-// class gdPromise {
-//   constructor(resolve, reject) {
-//     this.resolve = console.log(resolve);
-//     this.reject = console.log(reject);
-//   }
-// }
-
-// const myPromise = new gdPromise(10, 20);
-
-// function approach
