@@ -1,6 +1,15 @@
-# Pesto Assignemnets
+# Pesto Assignments
 
-# Week4 assignment2
+# Week4 assignment 2
 
-- Create an object called Teacher derived from the Person class, and implement a method called teach which receives a string called subject, and prints out:
-  [teacher's name]is now teaching[subject]
+- Implement Fibonacci Series with Iterators
+- Guidelines:
+
+  - 1.The expected output should be achieved using Iterators only.
+  - 2.Reference:https://medium.com/@akshayshekokar/fibonacci-series-with-iterators-90a8b3dd0d92
+  - 3.For Loops, Maps should not have been used.
+  - 4.3rd party libraries should not have been used.
+
+- Outcome:
+  - 1.Understanding how Iterators work.
+  - 2.Understanding ‘under the hood’ implementation of Iterators.
