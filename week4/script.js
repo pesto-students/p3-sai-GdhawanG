@@ -1,22 +1,22 @@
-const fibObj = {
+const FibObj = {
+  n: 5,
   [Symbol.iterator]: function () {
+    let i = 1;
+    let oldVal = 0,
+      newVal = 0;
     return {
-      next: function () {
-        if (condition) {
-          return {
-            value: "something",
-            done: false,
-          };
+      next: () => {
+        if (i++ <= this.n) {
+          console.log(i)[(oldVal, newVal)] = [newVal, oldVal + newVal || 1];
+          return { value: oldVal, done: false };
         } else {
-          return {
-            done: true,
-          };
+          return { done: true };
         }
       },
     };
   },
 };
 
-for (let num of fibObj) {
-  console.log(n);
+for (let numSeries of FibObj) {
+  console.log(numSeries);
 }
