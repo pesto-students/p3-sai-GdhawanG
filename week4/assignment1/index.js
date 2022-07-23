@@ -27,3 +27,11 @@ let myPromise = function (executorFunc) {
 myPromise(executorFunc);
 // myPromise.then();
 // myPromise(executorFunc).then().catch();
+
+function CustomPromise(resolve, reject) {
+  this.resolve = resolve;
+  this.reject = reject;
+}
+
+const myProm = new CustomPromise();
+myProm.then = {};
