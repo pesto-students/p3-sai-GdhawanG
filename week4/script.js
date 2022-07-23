@@ -1,22 +1,14 @@
-const fibObj = {
-  [Symbol.iterator]: function () {
-    return {
-      next: function () {
-        if (condition) {
-          return {
-            value: "something",
-            done: false,
-          };
-        } else {
-          return {
-            done: true,
-          };
-        }
-      },
-    };
-  },
+var Person = function (name, subject) {
+  this.name = name;
+  this.subject = subject;
+
+  function teach(subject) {
+    return `${this.name} is now teaching ${this.subject}`;
+  }
 };
 
-for (let num of fibObj) {
-  console.log(n);
-}
+var Teacher = new Person("gunjan", "js");
+
+console.log(Teacher.__proto__);
+
+// Teacher.console.log(Teacher.teach("js"));
