@@ -1,16 +1,17 @@
+let map = new Map();
+// let sum = 0;
 const memoizeAdd = function (...args) {
-  const key = [...args];
-  const sum = key.reduce((pre, cur) => {
-    return pre + cur;
-  }, 0);
-
-  const map = new Map();
-  if (key == map.has(key)) {
+  let key = [...args].join(); // [100]
+  if (map.has(key)) {
     checkTime(map.get(key));
+    console.log("if");
   } else {
+    let sum = [...args].reduce((pre, cur) => {
+      return pre + cur;
+    }, 0);
     map.set(key, sum);
-    checkTime(map.get(key));
   }
+  checkTime(map.get(key));
 };
 
 const checkTime = function (fn) {
@@ -22,5 +23,6 @@ const checkTime = function (fn) {
 memoizeAdd(100, 100);
 memoizeAdd(100);
 memoizeAdd(100, 200);
+// (key = 100), 200, (value = 300);
 memoizeAdd(100, 100);
 memoizeAdd(100, 100, 400);
