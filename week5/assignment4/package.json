@@ -1,0 +1,19 @@
+{
+  "name": "p3-sai-gdhawang",
+  "version": "1.0.0",
+  "description": "package.json for assignment 5.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pesto-students/p3-sai-GdhawanG.git"
+  },
+  "author": "Gunjan Dhawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pesto-students/p3-sai-GdhawanG/issues"
+  },
+  "homepage": "https://github.com/pesto-students/p3-sai-GdhawanG#readme"
+}
