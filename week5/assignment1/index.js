@@ -33,4 +33,16 @@ const awaitFunc = async () => {
   }
 };
 
-awaitFunc();
+// awaitFunc();
+
+function* myGenerator() {
+  // console.log("in myGenerator function");
+  yield doTask1();
+  yield doTask2();
+  yield doTask3();
+}
+
+console.log(myGenerator().next());
+console.log(myGenerator().next());
+console.log(myGenerator().next());
+console.log(myGenerator().next());
