@@ -10,7 +10,7 @@ class LinkedList {
     this.head = null;
     this.tail = null;
     this.size = 0;
-    this.maxSize = 10;
+    this.maxSize = 104;
   }
 
   push(value) {
@@ -41,6 +41,28 @@ class LinkedList {
     console.log(aux.join(" -> "));
     return;
   }
+  /*
+  @function reverse - To reverse a singly linked list
+ Time complexity = O(N)
+ Space complexity = O(1)
+*/
+  reverse() {
+    if (this.size == 0) throw new Error("Empty List");
+    if (this.size == 1) return this;
+
+    let cur = this.head;
+    let prev = null;
+    let temp;
+    while (cur != null) {
+      temp = cur.next;
+      cur.next = prev;
+      prev = cur;
+      cur = temp;
+    }
+    //swap head and tail
+    [this.head, this.tail] = [this.tail, this.head];
+    return this;
+  }
 }
 
 try {
@@ -50,6 +72,8 @@ try {
   list.push(30);
   list.push(40);
   list.push(50);
+  list.log();
+  list.reverse();
   list.log();
 } catch (error) {
   console.error(error);
