@@ -1,0 +1,23 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+}
+
+.left-pane {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.right-pane {
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
