@@ -1,4 +1,5 @@
 let map = new Map();
+
 const memoizeAdd = function (...args) {
   let key = [...args].join();
   if (map.has(key)) {
@@ -9,29 +10,8 @@ const memoizeAdd = function (...args) {
     }, 0);
     map.set(key, sum);
   }
-  checkTime(map.get(key));
 
-let map = new Map();
-
-// let sum = 0;
->>>>>>> 046ec99 (done)
-=======
->>>>>>> c78058b (Memoization achieved)
-const memoizeAdd = function (...args) {
-  let key = [...args].join();
-  if (map.has(key)) {
-    checkTime(map.get(key));
-  } else {
-    let sum = [...args].reduce((pre, cur) => {
-      return pre + cur;
-    }, 0);
-    map.set(key, sum);
-  }
-<<<<<<< HEAD
->>>>>>> 091063b (moved files into assignment1 folder)
-=======
   checkTime(map.get(key));
->>>>>>> 046ec99 (done)
 };
 
 const checkTime = function (fn) {
@@ -44,10 +24,4 @@ memoizeAdd(100, 100);
 memoizeAdd(100);
 memoizeAdd(100, 200);
 memoizeAdd(100, 100);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 memoizeAdd(100, 100, 400);
->>>>>>> 091063b (moved files into assignment1 folder)
-=======
->>>>>>> c78058b (Memoization achieved)
