@@ -1,24 +1,11 @@
-.App {
-  text-align: center;
-  background-color: gray;
-  width: 400px;
-  height: 500px;
-  margin: auto;
-  margin-top: 40px;
+.app {
+  padding: 30px;
+  background-color: darkgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
 }
-
-/* .container {
-  background-color: gray;
-  width: fit-content;
-} */
